@@ -1,0 +1,14 @@
+{
+  "@@locale": "uz",
+  "system_settings": "Tizim sozlamalari",
+  "language": "Til",
+  "theme": "Rang",
+  "dark_theme": "Qorong'i rang",
+  "light_theme": "Yorqin rang",
+  "other": "Boshqa",
+  "support": "Maslahatlar va yordam",
+  "currency": "Kurslar",
+  "news": "Yangiliklar",
+  "maps": "Xarita",
+  "settings": "Sozlamalar"
+}

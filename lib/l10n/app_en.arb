@@ -1,0 +1,14 @@
+{
+  "@@locale": "en",
+  "system_settings": "System Settings",
+  "language": "Language",
+  "theme": "Theme",
+  "dark_theme": "Dark Theme",
+  "light_theme": "Light Theme",
+  "other": "Other",
+  "support": "Tips and Support",
+  "currency": "Currency",
+  "news": "News",
+  "maps": "Maps",
+  "settings": "Settings"
+}

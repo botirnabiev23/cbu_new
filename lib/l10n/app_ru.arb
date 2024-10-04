@@ -1,0 +1,14 @@
+{
+  "@@locale": "ru",
+  "system_settings": "Системные настройки",
+  "language": "Язык",
+  "theme": "Тема",
+  "dark_theme": "Темная тема",
+  "light_theme": "Светлая тема",
+  "other": "Другое",
+  "support": "Советы и поддержка",
+  "currency": "Курсы",
+  "news": "Новости",
+  "maps": "Карта",
+  "settings": "Настройки"
+}
