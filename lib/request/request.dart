@@ -10,7 +10,6 @@ class CBRequest {
     return json.map<CBModel>((json) => CBModel.fromJson(json)).toList();
   }
 }
-class Request{}
 class OnlineService {
   Future<List<Quote>> getQuotes() async {
     final response = await http
