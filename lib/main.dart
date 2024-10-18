@@ -37,6 +37,7 @@ class _CBUAppState extends State<CBUApp> {
 
     return MaterialApp(
       themeMode: themeProvider.themeMode,
+
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       home: const SplashScreen(),
