@@ -14,6 +14,31 @@ class SettingPage extends StatefulWidget {
 class _SettingPageState extends State<SettingPage> {
   String selectedOption = 'Русский';
 
+  @override
+  void initState() {
+    super.initState();
+    final localeProvider = Provider.of<LocaleProvider>(context, listen: false);
+    final currentLocale = localeProvider.locale;
+    if (currentLocale != null) {
+      setState(() {
+        selectedOption = _getLanguageName(currentLocale.languageCode);
+      });
+    }
+  }
+
+  String _getLanguageName(String languageCode) {
+    switch (languageCode) {
+      case 'uz':
+        return 'O\'zbekcha';
+      case 'ru':
+        return 'Русский';
+      case 'en':
+        return 'English';
+      default:
+        return 'Русский';
+    }
+  }
+
   void openRadioList() {
     showModalBottomSheet(
       context: context,
