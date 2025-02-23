@@ -1,6 +1,7 @@
 import 'package:cbu/pages/currency_page.dart';
 import 'package:cbu/pages/maps_page.dart';
 import 'package:cbu/pages/news_page.dart';
+import 'package:cbu/pages/search_page.dart';
 import 'package:cbu/pages/settings_page.dart';
 import 'package:cbu/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
@@ -81,6 +82,23 @@ class _HomePageCBState extends State<HomePageCB> {
           appBar[_currentIndex],
           style: TextStyle(color: isDarkMode ? Colors.black : Colors.white),
         ),
+        actions: [
+          if (_currentIndex == 0)
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return const SearchPage();
+                    },
+                  ),
+                );
+              },
+              icon: Icon(Icons.search,
+                  color: isDarkMode ? Colors.black : Colors.white),
+            ),
+        ],
         automaticallyImplyLeading: false,
         centerTitle: true,
         backgroundColor: Colors.yellow.shade700,
